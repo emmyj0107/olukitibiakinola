@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmy Receipt Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- HEADER -->
+    <div class="header">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <img src="images/logo2.jpeg" alt="logo" class="logo">
+      <h1>OLUKITIBI AKINOLA & CO</h1>
+      <h4>ESTATE SURVEYORS & CONSULTANT.</h4>
+      <h5>Address: No.3 oyebamiji street,bashorun, ibadan.</h5>
+      <h5>Email:olukitibiakinola@gmail.com</h5>
+      <p>Receipt System</p>
+    </div>
+
+    <!-- INPUT FORM -->
+    <div class="form">
+
+      <input type="text" id="name" placeholder="Customer Name">
+      <input type="number" id="amount" placeholder="Amount (₦)">
+      <input type="text" id="desc" placeholder="Description">
+
+      <button onclick="generateReceipt()">Generate Receipt</button>
+      
+    </div>
+
+    <!-- RECEIPT OUTPUT -->
+    <div id="receipt" class="receipt"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
